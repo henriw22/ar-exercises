@@ -11,3 +11,5 @@ puts "----------"
 @sales = Store.sum(:annual_revenue)
 puts @sales
 puts Store.average(:annual_revenue)
+@stores = Store.where("annual_revenue > 1000000")
+puts @stores.count
